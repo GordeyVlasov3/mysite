@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Гранит Мастер</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518977956812-cd3dbadaaf31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .active-page {
+            background-color: #1f2937;
+            color: white;
+        }
+        .nav-link:hover {
+            color: #d1d5db;
+        }
+        .form-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #d97706;
+            border-color: #d97706;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Навигация -->
+    <nav class="bg-gray-800 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-mountain text-2xl text-gray-300"></i>
+                <span class="text-xl font-bold">Гранит Мастер</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Главная</a>
+                <a href="/catalog.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium">Каталог</a>
+                <a href="/about.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium">О нас</a>
+                <a href="/contact.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium active-page">Контакты</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Мобильное меню -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-700 pb-3 px-4">
+            <a href="/" class="block px-3 py-2 rounded-md text-base font-medium">Главная</a>
+            <a href="/catalog.html" class="block px-3 py-2 rounded-md text-base font-medium">Каталог</a>
+            <a href="/about.html" class="block px-3 py-2 rounded-md text-base font-medium">О нас</a>
+            <a href="/contact.html" class="block px-3 py-2 rounded-md text-base font-medium active-page">Контакты</a>
+        </div>
+    </nav>
+
+    <!-- Герой секция -->
+    <section class="contact-hero text-white py-16 md:py-24 px-4">
+        <div class="container mx-auto">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Свяжитесь с нами</h1>
+            <p class="text-lg md:text-xl max-w-3xl">Мы готовы ответить на все ваши вопросы и помочь с выбором памятника</p>
+        </div>
+    </section>
+
+    <!-- Контактная информация -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 text-gray-800">Наши контакты</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="contact-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                            <div class="text-amber-600 text-3xl mb-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-3 flex items-center">
+                                <i class="fas fa-map-marker-alt mr-3 text-amber-400"></i> Адрес
+                            </h3>
+                            <p>Апрелевская улица, 65, Апрелевка, Наро-Фоминский городской округ, Московская область, 143362</p>
+                        </div>
+                        
+                        <div class="contact-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                            <div class="text-amber-600 text-3xl mb-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Телефоны</h3>
+                            <p class="text-gray-600">+7 (980) 536-84-49</p>
+                            <p class="text-gray-600">+7 (916) 990-44-91</p>
+                            <p class="text-amber-600 font-medium mt-2">Круглосуточный телефон</p>
+                        </div>
+                        
+                        <div class="contact-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                            <div class="text-amber-600 text-3xl mb-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Email</h3>
+                            <p class="text-gray-600">info@granit-master.ru</p>
+                            <p class="text-gray-600">orders@granit-master.ru</p>
+                        </div>
+                        
+                        <div class="contact-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                            <div class="text-amber-600 text-3xl mb-4">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold mb-2 text-gray-800">Режим работы</h3>
+                            <p class="text-gray-600">Пн-Пт: 9:00 - 18:00</p>
+                            <p class="text-gray-600">Сб: 10:00 - 15:00</p>
+                            <p class="text-gray-600">Вс: выходной</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Мы в социальных сетях</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-gray-800 hover:bg-gray-900 text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-vk text-xl"></i>
+                            </a>
+                            <a href="https://t.me/granit_master77" target="_blank" class="bg-gray-800 hover:bg-gray-900 text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-telegram text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-gray-800 hover:bg-gray-900 text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                            </a>
+                            <a href="#" class="bg-gray-800 hover:bg-gray-900 text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 text-gray-800">Напишите нам</h2>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Ваше имя</label>
+                            <input type="text" id="name" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition duration-300" placeholder="Иван Иванов">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Телефон</label>
+                            <input type="tel" id="phone" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition duration-300" placeholder="+7 (999) 123-45-67">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition duration-300" placeholder="ivan@example.com">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Сообщение</label>
+                            <textarea id="message" rows="5" class="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition duration-300" placeholder="Ваше сообщение..."></textarea>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <input type="checkbox" id="agree" class="form-checkbox h-5 w-5 text-amber-600 rounded focus:ring-amber-500 border-gray-300">
+                            <label for="agree" class="ml-2 block text-gray-700">
+                                Я согласен на обработку персональных данных
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg inline-flex items-center transition duration-300 w-full justify-center">
+                            <i class="fas fa-paper-plane mr-2"></i> Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Как нас найти</h2>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.249393964839!2d37.065623!3d55.538275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aadf1e2e2e2e3%3A0x0!2zNTXCsDMyJzE4LjgiTiAzN8KwMDQnMDQuMSJF!5e0!3m2!1sru!2sru!4v1718031111111!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="rounded-lg"></iframe>
+                </div>
+                
+                <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800 flex items-center">
+                            <i class="fas fa-subway mr-2 text-amber-600"></i> Метро
+                        </h3>
+                        <p class="text-gray-600">Ближайшие станции:</p>
+                        <ul class="mt-2 space-y-1">
+                            <li class="flex items-center">
+                                <i class="fas fa-circle text-xs text-amber-600 mr-2"></i>
+                                <span class="text-gray-600">Красные Ворота (5 мин пешком)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-circle text-xs text-amber-600 mr-2"></i>
+                                <span class="text-gray-600">Комсомольская (10 мин пешком)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800 flex items-center">
+                            <i class="fas fa-bus mr-2 text-amber-600"></i> Автобусы
+                        </h3>
+                        <p class="text-gray-600">Остановка "Улица Гранитная":</p>
+                        <ul class="mt-2 space-y-1">
+                            <li class="flex items-center">
+                                <i class="fas fa-circle text-xs text-amber-600 mr-2"></i>
+                                <span class="text-gray-600">№ 40, 105, 120</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-circle text-xs text-amber-600 mr-2"></i>
+                                <span class="text-gray-600">№ 12 (ночной)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800 flex items-center">
+                            <i class="fas fa-car mr-2 text-amber-600"></i> Парковка
+                        </h3>
+                        <p class="text-gray-600">Для клиентов:</p>
+                        <ul class="mt-2 space-y-1">
+                            <li class="flex items-center">
+                                <i class="fas fa-circle text-xs text-amber-600 mr-2"></i>
+                                <span class="text-gray-600">Бесплатная парковка во дворе</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-circle text-xs text-amber-600 mr-2"></i>
+                                <span class="text-gray-600">Платная парковка на улице</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Часто задаваемые вопросы -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Часто задаваемые вопросы</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question flex justify-between items-center w-full px-6 py-4 bg-gray-50 text-gray-800 font-medium text-left hover:bg-gray-100 transition duration-300">
+                        <span>Какой срок изготовления памятника?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 py-4 bg-white hidden">
+                        <p class="text-gray-600">Стандартный срок изготовления памятника составляет от 14 до 30 рабочих дней в зависимости от сложности работы и загруженности производства. В сезон (апрель-октябрь) сроки могут увеличиваться до 45 дней. Для срочных заказов возможен экспресс-режим за дополнительную плату.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question flex justify-between items-center w-full px-6 py-4 bg-gray-50 text-gray-800 font-medium text-left hover:bg-gray-100 transition duration-300">
+                        <span>Можно ли приехать и посмотреть образцы?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 py-4 bg-white hidden">
+                        <p class="text-gray-600">Да, у нас есть выставочный зал с образцами наших работ, где вы можете лично оценить качество материалов и исполнения. Мы рекомендуем предварительно записаться по телефону, чтобы наш специалист мог уделить вам достаточно времени и ответить на все вопросы. График работы выставочного зала: Пн-Пт с 10:00 до 19:00, Сб с 11:00 до 16:00.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question flex justify-between items-center w-full px-6 py-4 bg-gray-50 text-gray-800 font-medium text-left hover:bg-gray-100 transition duration-300">
+                        <span>Вы занимаетесь установкой памятников?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 py-4 bg-white hidden">
+                        <p class="text-gray-600">Да, мы предоставляем полный комплекс услуг: от проектирования и изготовления до доставки и профессиональной установки памятника. Наши мастера имеют многолетний опыт работы и все необходимые разрешения для работы на кладбищах Москвы и Московской области. Установка производится с соблюдением всех норм и требований.</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question flex justify-between items-center w-full px-6 py-4 bg-gray-50 text-gray-800 font-medium text-left hover:bg-gray-100 transition duration-300">
+                        <span>Какие гарантии вы предоставляете?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 py-4 bg-white hidden">
+                        <p class="text-gray-600">Мы предоставляем гарантию 10 лет на материалы и 5 лет на работы. В случае выявления производственных дефектов в течение гарантийного срока мы бесплатно устраняем их. Гарантия не распространяется на повреждения, вызванные внешними воздействиями (вандализм, природные явления, неправильная эксплуатация).</p>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-question flex justify-between items-center w-full px-6 py-4 bg-gray-50 text-gray-800 font-medium text-left hover:bg-gray-100 transition duration-300">
+                        <span>Как происходит оплата?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer px-6 py-4 bg-white hidden">
+                        <p class="text-gray-600">Оплата происходит в два этапа: 50% предоплата при заключении договора и подписании эскиза, оставшиеся 50% - по готовности памятника перед доставкой и установкой. Мы принимаем наличные, банковские карты и безналичный расчет для юридических лиц. Все платежи проводятся официально с предоставлением всех необходимых документов.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-8 rounded-lg inline-flex items-center transition duration-300">
+                    <i class="fas fa-question-circle mr-2"></i> Задать свой вопрос
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-mountain text-2xl text-gray-300 mr-2"></i> Гранит Мастер
+                    </h3>
+                    <p class="text-gray-400">Изготовление памятников из гранита с 2005 года. Качество, проверенное временем.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Меню</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-gray-400 hover:text-white transition duration-300">Главная</a></li>
+                        <li><a href="/catalog.html" class="text-gray-400 hover:text-white transition duration-300">Каталог</a></li>
+                        <li><a href="/about.html" class="text-gray-400 hover:text-white transition duration-300">О нас</a></li>
+                        <li><a href="/contact.html" class="text-gray-400 hover:text-white transition duration-300">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Контакты</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">Апрелевская улица, 65, Апрелевка, Наро-Фоминский городской округ, Московская область, 143362</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">+7 (980) 536-84-49</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-gray-400"></i>
+                            <span class="text-gray-400">info@granit-master.ru</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Мы в соцсетях</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-vk text-2xl"></i>
+                        </a>
+                        <a href="https://t.me/granit_master77" target="_blank" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-telegram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-youtube text-2xl"></i>
+                        </a>
+                    </div>
+                    <div class="mt-4">
+                        <button class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-4 rounded-md text-sm transition duration-300">
+                            <i class="fas fa-phone-alt mr-2"></i> Заказать звонок
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Гранит Мастер. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Мобильное меню
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Анимация карточек контактов
+        const contactCards = document.querySelectorAll('.contact-card');
+        
+        contactCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 10px 25px rgba(0, 0, 0, 0.2)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            });
+        });
+
+        // FAQ аккордеон
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Закрываем все открытые ответы, кроме текущего
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    if (item !== answer && !item.classList.contains('hidden')) {
+                        item.classList.add('hidden');
+                        item.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+                        item.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Переключаем текущий ответ
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
+</body>
+</html>

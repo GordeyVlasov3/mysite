@@ -10,7 +10,7 @@ const Catalog = () => {
       description: 'Традиционный памятник из карельского гранита с полированной лицевой стороной',
       price: '25 000',
       category: 'monuments',
-      image: 'https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: '/images/monument1.svg'
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const Catalog = () => {
       description: 'Православный крест из темного гранита с возможностью нанесения гравировки',
       price: '18 000',
       category: 'crosses',
-      image: 'https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: '/images/cross.svg'
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Catalog = () => {
       description: 'Комплект ограждения из гранита с коваными элементами и цоколем',
       price: '35 000',
       category: 'fences',
-      image: 'https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: '/images/fence.svg'
     },
     {
       id: 4,
@@ -34,7 +34,7 @@ const Catalog = () => {
       description: 'Современная стелла из гранита с возможностью размещения фотографии',
       price: '22 000',
       category: 'monuments',
-      image: 'https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: '/images/stele.svg'
     },
     {
       id: 5,
@@ -42,7 +42,7 @@ const Catalog = () => {
       description: 'Гранитный цветник для посадки цветов и растений',
       price: '8 000',
       category: 'accessories',
-      image: 'https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: '/images/flowerbed.svg'
     },
     {
       id: 6,
@@ -50,7 +50,7 @@ const Catalog = () => {
       description: 'Гранитная лавочка для отдыха у могилы',
       price: '12 000',
       category: 'accessories',
-      image: 'https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
+      image: '/images/bench.svg'
     }
   ]
 

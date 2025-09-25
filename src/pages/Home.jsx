@@ -65,7 +65,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1584270355035-4d5b859d7a6a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                src="/images/monument1.svg" 
                 alt="Мастерская" 
                 className="rounded-2xl shadow-2xl w-full"
               />
@@ -93,7 +93,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="card">
               <img 
-                src="https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                src="/images/monument1.svg" 
                 alt="Памятник" 
                 className="w-full h-64 object-cover rounded-t-lg"
               />
@@ -113,7 +113,7 @@ const Home = () => {
             
             <div className="card">
               <img 
-                src="https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                src="/images/cross.svg" 
                 alt="Крест" 
                 className="w-full h-64 object-cover rounded-t-lg"
               />
@@ -133,7 +133,7 @@ const Home = () => {
             
             <div className="card">
               <img 
-                src="https://images.unsplash.com/photo-1603105037880-8802c0a72bc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+                src="/images/fence.svg" 
                 alt="Оградка" 
                 className="w-full h-64 object-cover rounded-t-lg"
               />

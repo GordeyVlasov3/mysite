@@ -1,0 +1,36 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fenceGranite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6B5B47;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A3E32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Фон -->
+  <rect width="400" height="300" fill="#f0f0f0"/>
+  
+  <!-- Оградка -->
+  <!-- Левая колонна -->
+  <rect x="80" y="100" width="20" height="120" fill="url(#fenceGranite)" stroke="#333" stroke-width="2"/>
+  <!-- Правая колонна -->
+  <rect x="300" y="100" width="20" height="120" fill="url(#fenceGranite)" stroke="#333" stroke-width="2"/>
+  
+  <!-- Верхняя перекладина -->
+  <rect x="80" y="100" width="240" height="15" fill="url(#fenceGranite)" stroke="#333" stroke-width="2"/>
+  <!-- Нижняя перекладина -->
+  <rect x="80" y="200" width="240" height="15" fill="url(#fenceGranite)" stroke="#333" stroke-width="2"/>
+  
+  <!-- Кованые элементы -->
+  <circle cx="120" cy="130" r="8" fill="#gold" stroke="#333" stroke-width="1"/>
+  <circle cx="180" cy="130" r="8" fill="#gold" stroke="#333" stroke-width="1"/>
+  <circle cx="240" cy="130" r="8" fill="#gold" stroke="#333" stroke-width="1"/>
+  <circle cx="280" cy="130" r="8" fill="#gold" stroke="#333" stroke-width="1"/>
+  
+  <!-- Цоколь -->
+  <rect x="70" y="220" width="260" height="30" fill="url(#fenceGranite)" stroke="#333" stroke-width="2"/>
+  
+  <!-- Цветы -->
+  <circle cx="50" cy="180" r="8" fill="#ff69b4"/>
+  <circle cx="350" cy="180" r="8" fill="#ff69b4"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowerGranite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6B5B47;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A3E32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Фон -->
+  <rect width="400" height="300" fill="#f0f0f0"/>
+  
+  <!-- Цветник -->
+  <rect x="100" y="150" width="200" height="80" fill="url(#flowerGranite)" stroke="#333" stroke-width="2"/>
+  
+  <!-- Внутренняя часть для цветов -->
+  <rect x="120" y="170" width="160" height="40" fill="#90EE90" stroke="#333" stroke-width="1"/>
+  
+  <!-- Цветы в цветнике -->
+  <circle cx="140" cy="190" r="6" fill="#ff69b4"/>
+  <circle cx="160" cy="190" r="6" fill="#ff1493"/>
+  <circle cx="180" cy="190" r="6" fill="#ff69b4"/>
+  <circle cx="200" cy="190" r="6" fill="#ff1493"/>
+  <circle cx="220" cy="190" r="6" fill="#ff69b4"/>
+  <circle cx="240" cy="190" r="6" fill="#ff1493"/>
+  <circle cx="260" cy="190" r="6" fill="#ff69b4"/>
+  
+  <!-- Декоративные элементы -->
+  <circle cx="150" cy="160" r="4" fill="#gold" stroke="#333" stroke-width="1"/>
+  <circle cx="250" cy="160" r="4" fill="#gold" stroke="#333" stroke-width="1"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="benchGranite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7355;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6B5B47;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A3E32;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Фон -->
+  <rect width="400" height="300" fill="#f0f0f0"/>
+  
+  <!-- Лавочка -->
+  <!-- Спинка -->
+  <rect x="100" y="120" width="200" height="20" fill="url(#benchGranite)" stroke="#333" stroke-width="2"/>
+  <!-- Сиденье -->
+  <rect x="100" y="200" width="200" height="20" fill="url(#benchGranite)" stroke="#333" stroke-width="2"/>
+  
+  <!-- Ножки -->
+  <rect x="120" y="220" width="15" height="40" fill="url(#benchGranite)" stroke="#333" stroke-width="2"/>
+  <rect x="265" y="220" width="15" height="40" fill="url(#benchGranite)" stroke="#333" stroke-width="2"/>
+  
+  <!-- Основание -->
+  <rect x="90" y="260" width="220" height="20" fill="url(#benchGranite)" stroke="#333" stroke-width="2"/>
+  
+  <!-- Декоративные элементы -->
+  <circle cx="150" cy="140" r="6" fill="#gold" stroke="#333" stroke-width="1"/>
+  <circle cx="250" cy="140" r="6" fill="#gold" stroke="#333" stroke-width="1"/>
+</svg>

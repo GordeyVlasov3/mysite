@@ -1,0 +1,29 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="darkGranite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C2C2C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0D0D0D;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Фон -->
+  <rect width="400" height="300" fill="#f0f0f0"/>
+  
+  <!-- Крест -->
+  <rect x="180" y="60" width="40" height="180" fill="url(#darkGranite)" stroke="#000" stroke-width="2"/>
+  <rect x="120" y="120" width="160" height="40" fill="url(#darkGranite)" stroke="#000" stroke-width="2"/>
+  
+  <!-- Основание -->
+  <rect x="160" y="240" width="80" height="20" fill="url(#darkGranite)" stroke="#000" stroke-width="2"/>
+  
+  <!-- Гравировка на кресте -->
+  <text x="200" y="140" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">✞</text>
+  <text x="200" y="160" text-anchor="middle" fill="white" font-family="Arial" font-size="12">1920-2023</text>
+  
+  <!-- Цветы -->
+  <circle cx="100" cy="180" r="10" fill="#ff69b4"/>
+  <circle cx="300" cy="180" r="10" fill="#ff69b4"/>
+  <circle cx="110" cy="170" r="8" fill="#ff1493"/>
+  <circle cx="290" cy="170" r="8" fill="#ff1493"/>
+</svg>

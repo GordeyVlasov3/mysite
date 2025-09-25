@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-amber-600 hover:bg-amber-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-800 hover:bg-gray-900 text-white font-bold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2;
+  }
+  
+  .hero-bg {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1584270354949-c26b0d5e4a2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .nav-link {
+    @apply text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300;
+  }
+  
+  .nav-link.active {
+    @apply text-white bg-gray-800;
+  }
+}

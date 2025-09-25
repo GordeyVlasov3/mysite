@@ -1,29 +1,79 @@
 <svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="darkGranite" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#2C2C2C;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#1A1A1A;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#3C3C3C;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#2C2C2C;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#1A1A1A;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#0D0D0D;stop-opacity:1" />
     </linearGradient>
+    <pattern id="darkTexture" patternUnits="userSpaceOnUse" width="3" height="3">
+      <rect width="3" height="3" fill="#2C2C2C"/>
+      <circle cx="1" cy="1" r="0.2" fill="#404040" opacity="0.4"/>
+      <circle cx="2" cy="2" r="0.15" fill="#1A1A1A" opacity="0.6"/>
+    </pattern>
+    <filter id="crossShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="5" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
   </defs>
   
   <!-- Фон -->
-  <rect width="400" height="300" fill="#f0f0f0"/>
+  <rect width="400" height="300" fill="#f8f9fa"/>
   
-  <!-- Крест -->
-  <rect x="180" y="60" width="40" height="180" fill="url(#darkGranite)" stroke="#000" stroke-width="2"/>
-  <rect x="120" y="120" width="160" height="40" fill="url(#darkGranite)" stroke="#000" stroke-width="2"/>
+  <!-- Тень от креста -->
+  <ellipse cx="200" cy="280" rx="50" ry="12" fill="#000" opacity="0.3"/>
   
-  <!-- Основание -->
-  <rect x="160" y="240" width="80" height="20" fill="url(#darkGranite)" stroke="#000" stroke-width="2"/>
+  <!-- Крест с текстурой -->
+  <rect x="180" y="60" width="40" height="180" fill="url(#darkGranite)" stroke="#000" stroke-width="1" filter="url(#crossShadow)"/>
+  <rect x="120" y="120" width="160" height="40" fill="url(#darkGranite)" stroke="#000" stroke-width="1" filter="url(#crossShadow)"/>
+  <rect x="180" y="60" width="40" height="180" fill="url(#darkTexture)" opacity="0.4"/>
+  <rect x="120" y="120" width="160" height="40" fill="url(#darkTexture)" opacity="0.4"/>
+  
+  <!-- Полированные грани -->
+  <rect x="185" y="65" width="30" height="170" fill="url(#darkGranite)" opacity="0.7"/>
+  <rect x="125" y="125" width="150" height="30" fill="url(#darkGranite)" opacity="0.7"/>
   
   <!-- Гравировка на кресте -->
-  <text x="200" y="140" text-anchor="middle" fill="white" font-family="Arial" font-size="16" font-weight="bold">✞</text>
-  <text x="200" y="160" text-anchor="middle" fill="white" font-family="Arial" font-size="12">1920-2023</text>
+  <text x="200" y="140" text-anchor="middle" fill="#E0E0E0" font-family="serif" font-size="18" font-weight="bold">✞</text>
+  <text x="200" y="160" text-anchor="middle" fill="#C0C0C0" font-family="serif" font-size="12">1920 - 2023</text>
+  <text x="200" y="175" text-anchor="middle" fill="#A0A0A0" font-family="serif" font-size="10">ПОМЯНИ ГОСПОДИ</text>
   
-  <!-- Цветы -->
-  <circle cx="100" cy="180" r="10" fill="#ff69b4"/>
-  <circle cx="300" cy="180" r="10" fill="#ff69b4"/>
-  <circle cx="110" cy="170" r="8" fill="#ff1493"/>
-  <circle cx="290" cy="170" r="8" fill="#ff1493"/>
+  <!-- Основание -->
+  <rect x="160" y="240" width="80" height="25" fill="url(#darkGranite)" stroke="#000" stroke-width="1" filter="url(#crossShadow)"/>
+  <rect x="160" y="240" width="80" height="25" fill="url(#darkTexture)" opacity="0.3"/>
+  
+  <!-- Реалистичные цветы -->
+  <g transform="translate(80, 180)">
+    <circle cx="0" cy="0" r="15" fill="#ff69b4" opacity="0.9"/>
+    <circle cx="-4" cy="-4" r="5" fill="#ff1493"/>
+    <circle cx="4" cy="-4" r="5" fill="#ff69b4"/>
+    <circle cx="-4" cy="4" r="4" fill="#ff1493"/>
+    <circle cx="4" cy="4" r="4" fill="#ff69b4"/>
+    <circle cx="0" cy="0" r="3" fill="#ff1493"/>
+    <line x1="0" y1="15" x2="0" y2="30" stroke="#228B22" stroke-width="3"/>
+    <line x1="-2" y1="25" x2="-8" y2="20" stroke="#32CD32" stroke-width="2"/>
+    <line x1="2" y1="25" x2="8" y2="20" stroke="#32CD32" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(320, 180)">
+    <circle cx="0" cy="0" r="15" fill="#ff69b4" opacity="0.9"/>
+    <circle cx="-4" cy="-4" r="5" fill="#ff1493"/>
+    <circle cx="4" cy="-4" r="5" fill="#ff69b4"/>
+    <circle cx="-4" cy="4" r="4" fill="#ff1493"/>
+    <circle cx="4" cy="4" r="4" fill="#ff69b4"/>
+    <circle cx="0" cy="0" r="3" fill="#ff1493"/>
+    <line x1="0" y1="15" x2="0" y2="30" stroke="#228B22" stroke-width="3"/>
+    <line x1="-2" y1="25" x2="-8" y2="20" stroke="#32CD32" stroke-width="2"/>
+    <line x1="2" y1="25" x2="8" y2="20" stroke="#32CD32" stroke-width="2"/>
+  </g>
+  
+  <!-- Дополнительные цветы -->
+  <g transform="translate(100, 200)">
+    <circle cx="0" cy="0" r="10" fill="#FFB6C1" opacity="0.8"/>
+    <line x1="0" y1="10" x2="0" y2="20" stroke="#32CD32" stroke-width="2"/>
+  </g>
+  
+  <g transform="translate(300, 200)">
+    <circle cx="0" cy="0" r="10" fill="#FFB6C1" opacity="0.8"/>
+    <line x1="0" y1="10" x2="0" y2="20" stroke="#32CD32" stroke-width="2"/>
+  </g>
 </svg>
